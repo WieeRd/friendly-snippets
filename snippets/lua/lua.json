@@ -80,7 +80,7 @@
         "description": "Define a function"
     },
     "assign-function": {
-        "prefix": "f=",
+        "prefix": "fa",
         "body": ["${1:name} = function($2)", "\t${0}", "end"],
         "description": "Assign a function to a variable"
     },
@@ -90,17 +90,17 @@
         "description": "Define a local function"
     },
     "local-assign-function": {
-        "prefix": "lf=",
+        "prefix": "lfa",
         "body": ["local ${1:name} = function($2)", "\t${0}", "end"],
         "description": "Assign a function to a local variable"
     },
     "anonymous-function": {
-        "prefix": "f)",
+        "prefix": "fn",
         "body": ["function($1)", "\t${0}", "end"],
         "description": "Create an anonymous function"
     },
     "member-function": {
-        "prefix": "f,",
+        "prefix": "fm",
         "body": ["${1:name} = function($2)", "\t${0}", "end,"],
         "description": "Assign a function to a table key"
     },
